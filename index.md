@@ -6,7 +6,7 @@ Greetings to all!<br/>
 Course: MODE 4201<br/>
 Description: This course will investigate the different mobile architectures across various platforms. Students will learn about the concepts, tools, and techniques that are used to create mobile apps. Students will also create mobile apps covering native and hybrid architectures using tools that are easily available. 
 
-### Markdown
+'''### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
