@@ -1,7 +1,11 @@
-## Welcome!
+## Welcome
 
-Greetings to all!
-My name is Sara and this is the welcome page for my MODE Lab. I have two amusing and adorable cats and love to eat, craft, read, and learn new things.
+Greetings to all!<br/>
+<br/>My name is Sara and this is the welcome page for my MODE Lab. I have two amusing and adorable cats and love to eat, craft, read, and learn new things.<br/>
+<br/>
+Course: MODE 4201<br/>
+Description: This course will investigate the different mobile architectures across various platforms. Students will learn about the concepts, tools, and techniques that are used to create mobile apps. Students will also create mobile apps covering native and hybrid architectures using tools that are easily available. 
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
