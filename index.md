@@ -1,8 +1,10 @@
-## Welcome to GitHub Pages
+## Welcome to My Page
 
-You can use the [editor on GitHub](https://github.com/SaraBZL/sarabhatti.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Greetings to all!
+My name is Sara and this is the welcome page for my MODE Lab. I have two amusing and adorable cats and love to eat, craft, read, and learn new things. 
+Course: MODE 4201 - Mobile Development
+This course will investigate the different mobile architecture on many different platforms using live examples. Students will also be introduced to the tools, techniques. and concepts that are used in creating mobile apps. Mainly students will focus on creating mobile apps that cover native and hybrid architectures. 
+Evaluation Criteria will contain many labs, in class exercises, one project, a couple of quizzes, and one term test.  
 
 ### Markdown
 
