@@ -1,5 +1,7 @@
- <div w3-include-html="header.html"></div>
-<title>Home</title>
+<?php
+	$title = "Home";
+	include("./header.php");
+?>
 
 
 <!-- Header -->
