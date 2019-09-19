@@ -1,72 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>Course Page</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-  
-#classworks, #labs, #projects {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-#classworks td, #classworks th, #labs td, #labs th, #projects td, #projects th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-#classworks tr:hover {background-color: #ddd;}
-#classworks th, #labs th, #projects th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: red;
-  color: white;
-}  
-  
-  
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
 </style>
-<body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="coursepage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Course Page</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
-  </div>
+</head>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="coursepage.html" class="w3-bar-item w3-button w3-padding-large">Course Page</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
-  </div>
-</div>
+<body lang=EN-CA link="#0563C1" vlink="#954F72">
 
-<!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Course Page</h1>
- 
-  <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
-</header>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-	    
-  <div class=WordSection1>
+<div class=WordSection1>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
 "Trebuchet MS",sans-serif'>Question 3: Mobile Application Development Tool</span></p>
@@ -78,34 +101,34 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 "Trebuchet MS",sans-serif'>(b)Platforms:</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>Â Â Â Â Â Â Â Â Â  Android: </span></p>
+"Trebuchet MS",sans-serif'>          Android: </span></p>
 
 <p class=MsoListParagraphCxSpFirst style='margin-left:79.5pt;text-indent:-18.0pt'><span
-style='font-size:12.0pt;line-height:107%;font-family:Symbol'>Â·<span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Based
 on Java &amp; XML</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:79.5pt;text-indent:-18.0pt'><span
-style='font-size:12.0pt;line-height:107%;font-family:Symbol'>Â·<span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Since
 Java &amp; Android are opensource can be developed on any OS</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:79.5pt;text-indent:-18.0pt'><span
-style='font-size:12.0pt;line-height:107%;font-family:Symbol'>Â·<span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Tools
 needed for app development are easily accessible</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:79.5pt;text-indent:-18.0pt'><span
-style='font-size:12.0pt;line-height:107%;font-family:Symbol'>Â·<span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Has
 SQLite which uses common SQL commands and some specific to SQLite</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:79.5pt;text-indent:-18.0pt'><span
-style='font-size:12.0pt;line-height:107%;font-family:Symbol'>Â·<span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>User
 Interface developed in 2 ways:</span></p>
@@ -113,8 +136,8 @@ Interface developed in 2 ways:</span></p>
 <p class=MsoListParagraphCxSpMiddle style='margin-left:115.5pt;text-indent:
 -18.0pt'><span style='font-size:12.0pt;line-height:107%;font-family:"Courier New"'>o<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Â XML
-â€“ things written in XML will get changed to Java objects</span></p>
+style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'> XML
+– things written in XML will get changed to Java objects</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:115.5pt;text-indent:
 -18.0pt'><span style='font-size:12.0pt;line-height:107%;font-family:"Courier New"'>o<span
@@ -123,7 +146,7 @@ style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>
 Native Code</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:151.5pt;text-indent:
--18.0pt'><span style='font-size:12.0pt;line-height:107%;font-family:Wingdings'>Â§<span
+-18.0pt'><span style='font-size:12.0pt;line-height:107%;font-family:Wingdings'>§<span
 style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
 style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Buttons
 &amp; textboxes can be created by using Java native code but its easier to just
@@ -137,41 +160,77 @@ inbuilt packages to communicate with internet &amp; web services, for example
 java.net or volley library</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>Â Â Â Â Â Â Â Â Â  iOS: </span></p>
+"Trebuchet MS",sans-serif'>          iOS: </span></p>
 
 <p class=MsoListParagraphCxSpFirst style='margin-left:79.5pt;text-indent:-18.0pt'><span
-style='font-size:12.0pt;line-height:107%;font-family:Symbol'>Â·<span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Needs
 knowledge of Objective-C</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:79.5pt;text-indent:-18.0pt'><span
-style='font-size:12.0pt;line-height:107%;font-family:Symbol'>Â·<span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Swift
 languages</span></p>
 
 <p class=MsoListParagraphCxSpLast style='margin-left:79.5pt;text-indent:-18.0pt'><span
-style='font-size:12.0pt;line-height:107%;font-family:Symbol'>Â·<span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Know
 C#, C++, SQLite or SQL, XML</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>Â Â Â Â Â Â Â Â Â  </span></p>
+"Trebuchet MS",sans-serif'>          </span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
 "Trebuchet MS",sans-serif'>(c)Application Development Type : indicate the </span></p>
 
 <p class=MsoNormal style='text-indent:36.0pt'><span style='font-size:12.0pt;
-line-height:107%;font-family:"Trebuchet MS",sans-serif'>a.Type (Native App, Web
-App, Cross-platform)</span></p>
+line-height:107%;font-family:"Trebuchet MS",sans-serif'>a. Native App</span></p>
 
 <p class=MsoNormal style='text-indent:36.0pt'><span style='font-size:12.0pt;
-line-height:107%;font-family:"Trebuchet MS",sans-serif'>b.Advantages </span></p>
+line-height:107%;font-family:"Trebuchet MS",sans-serif'>b. Advantages: </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:75.75pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Platform
+SDK enables access to all device APIs</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:75.75pt;text-indent:
+-18.0pt'><span style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Platform
+comes with familiar, original UI components</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:75.75pt;text-indent:
+-18.0pt'><span style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Code
+has direct access to platform functionality, which results in better
+performance</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:75.75pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Can
+have more opportunities for earning money, but stores do take a part of it</span></p>
 
 <p class=MsoNormal style='text-indent:36.0pt'><span style='font-size:12.0pt;
-line-height:107%;font-family:"Trebuchet MS",sans-serif'>c.DisadvantagesÂ  </span></p>
+line-height:107%;font-family:"Trebuchet MS",sans-serif'>c. Disadvantages:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Highest
+cost in developing</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Code
+will only work for that one platform</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
 "Trebuchet MS",sans-serif'>(d)Website : </span><a
@@ -179,36 +238,122 @@ href="https://sarabzl.github.io/sarabhatti/"><span style='font-size:12.0pt;
 line-height:107%;font-family:"Trebuchet MS",sans-serif'>https://sarabzl.github.io/sarabhatti/</span></a></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(e)Developers : Indicate the developers (original
-and current if </span></p>
+"Trebuchet MS",sans-serif'>(e)Developers : Google &amp; JetBrains</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>different)</span></p>
+"Trebuchet MS",sans-serif'>(f)Release Date: August 2019  </span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(f)Release DateÂ  </span></p>
+"Trebuchet MS",sans-serif'>(g)License: </span><a
+href="https://developer.android.com/studio/terms"><span style='font-size:12.0pt;
+line-height:107%;font-family:"Trebuchet MS",sans-serif'>https://developer.android.com/studio/terms</span></a><span
+style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>
+</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(g)LicenseÂ  </span></p>
+"Trebuchet MS",sans-serif'>(h)Price: Android Studio is open source and as such
+developers can download it for free. If they would like to publish their app on
+lets say google pay they may have to pay a fee for that. </span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(h)Price</span></p>
+"Trebuchet MS",sans-serif'>(i)Programming Language(s): Android Studio
+languages: kotlin, C++, java</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(i)Programming Language(s) : list all the languages
-used to develop </span></p>
+"Trebuchet MS",sans-serif'>(j)Features:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:43.5pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>IntelliJ’s
+code editor</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:43.5pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Flexible
+Gradle-based build system</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:43.5pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Fast
+Emulator</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:43.5pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Unified
+environment where development can happen for all android devices</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:43.5pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Can
+apply changes to code on running app without having to restart</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:43.5pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Has
+code templates 7 GitHub integration</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:43.5pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Testing
+tools 7 frameworks</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:43.5pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Lint
+tools</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:43.5pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>C++
+&amp; NDK support</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:43.5pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Built-in
+support for Google Cloud Platform</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>an app</span></p>
+"Trebuchet MS",sans-serif'>(k)Debugger: Android Studio assists in debugging and
+has inline debugging and performance analysis tools </span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(j)Features</span></p>
+"Trebuchet MS",sans-serif'>(l)Built-in Emulator: </span></p>
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(k)Debugger</span></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.75pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Simulates
+android devices on your laptop</span></p>
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(l)Built-in Emulator </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:39.75pt;text-indent:
+-18.0pt'><span style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Offers
+most of the capability of a android device</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:39.75pt;text-indent:
+-18.0pt'><span style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Comes
+with predefined configurations for many Android phone, tablet, Wear OS, and
+Android TV devices</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:39.75pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Can
+use through GUI and programmatically through command line and the emulator
+console</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
 "Trebuchet MS",sans-serif'>(m)Host machine requirements in terms of hardware
@@ -219,34 +364,136 @@ used to develop </span></p>
 (Operating </span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>system, editors, any other software needed)</span></p>
+"Trebuchet MS",sans-serif'>system, editors, any other software needed): Windows
+10</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>32
+or 64-bit but emulator only works on 64</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>4
+GB RAM, minimum 8 GB recommended</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Minimum
+2 GB of available disk space, 4 GB Recommended (500 MB for IDE + 1.5 GB for
+Android SDK and emulator system image)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>1280
+x 800 minimum screen resolution</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><a
+href="https://developer.android.com/studio/releases/sdk-tools.html"><span
+style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>SDK
+Tools</span></a><span style='font-size:12.0pt;line-height:107%;font-family:
+"Trebuchet MS",sans-serif'>&nbsp;26.1.1 or higher</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif;
+color:#202124'>Windows: CPU with UG (unrestricted guest) support</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif;
+color:#202124'>HAXM 6.2.1 or later (HAXM 7.2.0 or later recommended)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Intel
+processor on Windows or Linux: Intel processor with support for Intel VT-x,
+Intel EM64T (Intel 64), and Execute Disable (XD) Bit functionality</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>AMD
+processor on Windows: Android Studio 3.2 or higher and Windows 10 April 2018
+release or higher for&nbsp;</span><a
+href="https://docs.microsoft.com/en-us/virtualization/api/"><span
+style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Windows
+Hypervisor Platform (WHPX)</span></a><span style='font-size:12.0pt;line-height:
+107%;font-family:"Trebuchet MS",sans-serif'>&nbsp;functionality</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(n)Integrated Development Environment (IDE) â€“ does
-it have an IDE or </span></p>
+"Trebuchet MS",sans-serif'>(n)Integrated Development Environment (IDE) – does
+it have an IDE or</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>use any editor ( notepad++) to create the code.</span></p>
+"Trebuchet MS",sans-serif'>use any editor ( notepad++) to create the code: Yes</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
 "Trebuchet MS",sans-serif'>(o)Software to be installed on the host machine
 before you can create </span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>an app</span></p>
+"Trebuchet MS",sans-serif'>an app: Java Development Kit (JDK)</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(p)Advantages </span></p>
+"Trebuchet MS",sans-serif'>(p)Advantages of Android Studio:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Is
+the Official IDE for Android development</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Opensource</span></p>
+
+<p class=MsoListParagraphCxSpLast><span style='font-size:12.0pt;line-height:
+107%;font-family:"Trebuchet MS",sans-serif'>&nbsp;</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(q)Disadvantages</span></p>
+"Trebuchet MS",sans-serif'>(q)Disadvantages of Android Studio</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Only
+for Android</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Emulator
+only works on 64-bit windows</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Not
+support C#</span></p>
+
+<p class=MsoListParagraphCxSpLast><span style='font-size:12.0pt;line-height:
+107%;font-family:"Trebuchet MS",sans-serif'>&nbsp;</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
 "Trebuchet MS",sans-serif'>(r)Language availability (like English, French,
-etc.)</span></p>
+etc.): Depends on your system local setting, Android can provide support for
+different local languages by using the resources directory in the Android
+Project</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(s)Uploading and Selling an App â€“ Do you need to pay
+"Trebuchet MS",sans-serif'>(s)Uploading and Selling an App – Do you need to pay
 any license fee </span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
@@ -254,89 +501,120 @@ any license fee </span></p>
 in selling an </span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>app along with the dollars and cents as a share.</span></p>
+"Trebuchet MS",sans-serif'>app along with the dollars and cents as a share:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>License
+Fee depends on the store you want to publish on</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>There
+is a 22 list launch checklist you should go through for Android:</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><a
+href="https://developer.android.com/distribute/best-practices/launch/launch-checklist.html"><span
+style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>https://developer.android.com/distribute/best-practices/launch/launch-checklist.html</span></a></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(t)Third â€“party emulator which can be linked to the
+"Trebuchet MS",sans-serif'>(t)Third –party emulator which can be linked to the
 tool : Select an </span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>emulator and explain in detail</span></p>
+"Trebuchet MS",sans-serif'>emulator and explain in detail: Bluestacks</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>Is
+an app player that lets you run mobile apps faster and as a full screen on your
+Windows or Mac</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-size:12.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>210
+million people use this app to play games on their PCs and Macs</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(u)Market Share</span></p>
+"Trebuchet MS",sans-serif'>(u)Market Share: 5.15%</span></p>
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(v)Number of apps available </span></p>
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+font-family:"Trebuchet MS",sans-serif'>(v)Number of apps available </span></b></p>
 
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Trebuchet MS",sans-serif'>(w)Number of downloads/users if applicable</span></p>
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
+font-family:"Trebuchet MS",sans-serif'>(w)Number of downloads/users if
+applicable</span></b></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
 "Trebuchet MS",sans-serif'>(x) Any other two properties not listed above</span></p>
 
 <p class=MsoNormal style='text-indent:36.0pt'><span style='font-size:12.0pt;
-line-height:107%;font-family:"Trebuchet MS",sans-serif'>1.</span></p>
+line-height:107%;font-family:"Trebuchet MS",sans-serif'>1. Code Completion</span></p>
 
 <p class=MsoNormal style='text-indent:36.0pt'><span style='font-size:12.0pt;
-line-height:107%;font-family:"Trebuchet MS",sans-serif'>2. </span></p>
+line-height:107%;font-family:"Trebuchet MS",sans-serif'>2. Version Control
+Basics</span></p>
 
 <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
 "Trebuchet MS",sans-serif'>&nbsp;</span></p>
 
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='position:relative;z-index:251659264;left:-23px;top:34px;width:717px;
+height:35px'><img width=717 height=1
+src="Mobile%20Application%20Development%20Tool_files/image001.png"></span><span
+style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>&nbsp;</span></p>
+
+<br clear=ALL>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Trebuchet MS",sans-serif'>References</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Trebuchet MS",sans-serif'>Android Studio release notes &nbsp;: &nbsp; Android
+Developers. (n.d.). Retrieved from
+https://developer.android.com/studio/releases</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Trebuchet MS",sans-serif'>Datanyze. (n.d.). Android Studio Market Share and
+Competitor Report: Compare to Android Studio, Microsoft Visual Studio, Eclipse
+IDE. Retrieved from </span><a
+href="https://www.datanyze.com/market-share/ide/android-studio-market-share"><span
+style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>https://www.datanyze.com/market-share/ide/android-studio-market-share</span></a></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Trebuchet MS",sans-serif'>Download Android Studio and SDK tools &nbsp;: &nbsp;
+Android Developers. (n.d.). Retrieved from </span><a
+href="https://developer.android.com/studio/index.html#Requirements"><span
+style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>https://developer.android.com/studio/index.html#Requirements</span></a></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Trebuchet MS",sans-serif'>Meet Android Studio  :  Android Developers. (n.d.).
+Retrieved from https://developer.android.com/studio/intro</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Trebuchet MS",sans-serif'>Support different languages and cultures &nbsp;:
+&nbsp; Android Developers. (n.d.). Retrieved from </span><a
+href="https://developer.android.com/training/basics/supporting-devices/languages"><span
+style='font-size:12.0pt;line-height:107%;font-family:"Trebuchet MS",sans-serif'>https://developer.android.com/training/basics/supporting-devices/languages</span></a></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Trebuchet MS",sans-serif'>What is Bluestacks? (2019, April 15). Retrieved from
+https://www.bluestacks.com/about-us.html</span></p>
+
 </div>
-  </div>
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-    </div>
-  </div>
-</div>
-
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-     <h1>Lab 2 - Mobile Application Development Tool</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-      <p class="w3-text-grey"> I think have to publish document for q3   
-        <a href="Mobile Application Development Tool.htm" >Mobile Application Development Tool</a> </p>
-    </div>
-  </div>
-</div>
-
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
 
 </body>
+
 </html>
